@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameras - Favorite Thing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .photo-description {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Thing - Cameras</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Cameras</h2>
+            <p>
+                Cameras are my favorite tool for capturing the world’s beauty and preserving memories.
+                From DSLR to mirrorless and even vintage film cameras, each type has its charm and purpose.
+            </p>
+            <p>
+                I enjoy photography because it allows me to tell stories, express creativity, and explore new perspectives.
+                My favorite brands include Canon, Fujifilm, and Sony for their innovative designs and superior quality.
+            </p>
+            <img src="images/camera.jpeg" alt="Camera" class="responsive-img">
+            <p>
+                Want to know more about cameras? Visit 
+                <a href="https://www.dpreview.com/" target="_blank" class="link-hover">Digital Photography Review</a>.
+            </p>
+        </section>
+
+        <!-- Added Introductory Text -->
+        <section>
+            <p>
+                Below are two of my favorite photos that I have taken. Each one captures a unique moment and perspective that I love sharing with others.
+            </p>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="gallery">
+            <div>
+                <img src="images/photo1.jpg" alt="Your first photo">
+                <p class="photo-description">Chennai, India</p>
+            </div>
+            <div>
+                <img src="images/photo2.jpg" alt="Your second photo">
+                <p class="photo-description">Dhaka, Bangladesh</p>
+            </div>
+        </section>
+
+        <nav class="links">
+            <a href="index.html" class="card">Back to Home</a>
+            <a href="place.html" class="card">Favorite Place</a>
+        </nav>
+    </main>
+</body>
+</html>
